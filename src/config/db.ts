@@ -22,7 +22,7 @@ const connectDB = async () => {
       await mongod.start();
     }
     const uri = await mongod.getUri();
-    console.log("Connection string for mongoDB" + uri);
+    console.log("Connection string for mongoDB " + uri);
 
     await mongoose.connect(uri);
 
