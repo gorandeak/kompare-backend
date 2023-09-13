@@ -143,7 +143,7 @@ app.post("/getTotal", async (req: Request, res: Response) => {
         }
       }
       if (body.vipDiscount) {
-        if (body.vehiclePower > 100) {
+        if (body.vehiclePower > 80) {
           allDiscounts.vipDiscount = roundToTwoDecimals(0.05 * total);
           total -= 0.05 * total;
         }
